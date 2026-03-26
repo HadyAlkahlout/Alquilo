@@ -1,16 +1,16 @@
+import 'package:alquilo/core/resources/colors_manager.dart';
 import 'package:flutter/material.dart';
-import 'colors.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primaryColor: AppColors.primaryColor,
-    scaffoldBackgroundColor: AppColors.backgroundLight,
+    primaryColor: ColorManager.primaryColor,
+    scaffoldBackgroundColor: ColorManager.backgroundLight,
   );
 
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primaryColor: AppColors.primaryColor,
-    scaffoldBackgroundColor: AppColors.backgroundDark,
+    primaryColor: ColorManager.primaryColor,
+    scaffoldBackgroundColor: ColorManager.backgroundDark,
   );
 }

@@ -1,5 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'features/splash/presentation/cubit/splash_cubit.dart';
 import 'core/localization/cubit/locale_cubit.dart';
 import 'core/network/api_client.dart';
 import 'core/network/dio_factory.dart';
@@ -20,4 +21,5 @@ Future<void> init() async {
 
   sl.registerFactory(() => ThemeCubit());
   sl.registerFactory(() => LocaleCubit());
+  sl.registerFactory(() => SplashCubit());
 }

@@ -1,12 +1,22 @@
+import 'package:alquilo/core/router/routes.dart';
+import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
+import 'package:alquilo/injection_container.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/splash/presentation/cubit/splash_cubit.dart';
+
 class AppRouter {
+
   static final router = GoRouter(
-    initialLocation: '/',
+    initialLocation: Routes.splash,
     routes: [
       GoRoute(
-        path: '/',
-        // builder: (context, state) => SplashPage(),
+        path: Routes.splash,
+        builder: (context, state) => BlocProvider(
+          create: (_) => sl<SplashCubit>()..start(),
+          child: const SplashPage(),
+        ),
       ),
     ],
   );
