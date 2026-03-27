@@ -23,7 +23,7 @@ class SplashPage extends StatelessWidget {
           if (state is NavigateToOnboarding) {
             context.go(Routes.onboarding);
           } else if (state is NavigateToLogin) {
-            context.go(Routes.login);
+            context.go(Routes.getStarted);
           } else if (state is NavigateToHome) {
             context.go(Routes.home);
           }

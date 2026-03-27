@@ -8,4 +8,12 @@ class StringsManager {
   static const String skip = "skip";
   static const String next = "next";
   static const String getStarted = "get_started";
+  static const String getStartedTitle = "get_started_title";
+  static const String getStartedDescription = "get_started_description";
+  static const String emailSignup = "email_signup";
+  static const String orHint = "or_hint";
+  static const String googleSignup = "google_signup";
+  static const String appleSignup = "apple_signup";
+  static const String haveAccount = "have_account";
+  static const String signIn = "sign_in";
 }

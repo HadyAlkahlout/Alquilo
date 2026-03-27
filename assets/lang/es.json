@@ -8,5 +8,14 @@
   "onboarding_description_2": "Tu aventura comienza aquí, al alcance de tu mano. Reserva, conduce y explora sin límites.",
   "skip": "Saltar",
   "next": "Siguiente",
-  "get_started": "Comenzar"
+  "get_started": "Comenzar",
+
+  "get_started_title": "¡Comencemos!",
+  "get_started_description": "Encuentra tu hogar ideal con facilidad y confianza.",
+  "email_signup": "Regístrate con tu correo electrónico",
+  "or_hint": "O usa el registro instantáneo",
+  "google_signup": "Regístrate con Google",
+  "apple_signup": "Regístrate con Apple",
+  "have_account": "¿Ya tienes una cuenta?",
+  "sign_in": "Inicia sesión"
 }

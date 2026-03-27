@@ -8,6 +8,14 @@
   "onboarding_description_2": "Your adventure starts here, at your fingertips. Book, drive, and explore without limits",
   "skip": "Skip",
   "next": "Next",
-  "get_started": "Get Started"
+  "get_started": "Get Started",
 
+  "get_started_title": "Lets Get Started",
+  "get_started_description": "Find your perfect home with ease and confidence.",
+  "email_signup": "Sign Up Email",
+  "or_hint": "Or Use Instant Sign Up",
+  "google_signup": "Sign Up with Google",
+  "apple_signup": "Sign Up with Apple",
+  "have_account": "Already Have an Account?",
+  "sign_in": "Sign In"
 }
