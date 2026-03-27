@@ -6,6 +6,9 @@ class AppSize {
   static const double s16 = 16;
   static const double s20 = 20;
   static const double s24 = 24;
+  static const double s32 = 32;
+  static const double s40 = 40;
+  static const double s52 = 52;
   static const double s120 = 120;
   static const double s240 = 240;
   static const double s360 = 360;
@@ -29,6 +32,12 @@ class AppMargins {
   static const double m16 = 16;
   static const double m20 = 20;
   static const double m24 = 24;
+  static const double m28 = 28;
+  static const double m32 = 32;
+  static const double m36 = 36;
+  static const double m40 = 40;
+  static const double m44 = 44;
+  static const double m48 = 48;
 }
 
 class AppDuration {

@@ -1,4 +1,13 @@
 {
   "app_name": "Alquilo",
-  "splashHint": "Book. Drive. Repeat."
+  "splash_hint": "Book. Drive. Repeat.",
+
+  "onboarding_title_1": "Quality cars, fair prices.",
+  "onboarding_description_1": "From city streets to open highways, we’ve got your ride covered. All you do is pick the keys.",
+  "onboarding_title_2": "Rides that fit your budget.",
+  "onboarding_description_2": "Your adventure starts here, at your fingertips. Book, drive, and explore without limits",
+  "skip": "Skip",
+  "next": "Next",
+  "get_started": "Get Started"
+
 }

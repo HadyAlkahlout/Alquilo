@@ -20,7 +20,7 @@ class SplashCubit extends Cubit<SplashState> {
 
     final token = storage.getString(StorageKeys.token);
 
-    if (seenOnboarding!) {
+    if (!seenOnboarding) {
       emit(NavigateToOnboarding());
     } else if (token == null) {
       emit(NavigateToLogin());

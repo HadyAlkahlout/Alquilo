@@ -1,4 +1,5 @@
 import 'package:alquilo/core/router/routes.dart';
+import 'package:alquilo/features/onbarding/presentation/pages/onboarding_page.dart';
 import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
 import 'package:alquilo/injection_container.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,6 +18,10 @@ class AppRouter {
           create: (_) => sl<SplashCubit>()..start(),
           child: const SplashPage(),
         ),
+      ),
+      GoRoute(
+        path: Routes.onboarding,
+        builder: (context, state) => OnboardingPage()
       ),
     ],
   );

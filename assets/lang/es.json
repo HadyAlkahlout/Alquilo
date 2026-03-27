@@ -1,4 +1,12 @@
 {
   "app_name": "Alquilo",
-  "splashHint": "Reserva. Conduce. Repite."
+  "splashHint": "Reserva. Conduce. Repite.",
+
+  "onboarding_title_1": "Autos de calidad, precios justos.",
+  "onboarding_description_1": "Desde las calles de la ciudad hasta las autopistas, tenemos el transporte perfecto para ti. Solo tienes que recoger las llaves.",
+  "onboarding_title_2": "Autos que se ajustan a tu presupuesto.",
+  "onboarding_description_2": "Tu aventura comienza aquí, al alcance de tu mano. Reserva, conduce y explora sin límites.",
+  "skip": "Saltar",
+  "next": "Siguiente",
+  "get_started": "Comenzar"
 }

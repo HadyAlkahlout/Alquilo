@@ -17,7 +17,7 @@ class LocalStorage {
     await prefs.setBool(key, value);
   }
 
-  bool? getBool(String key) {
-    return prefs.getBool(key);
+  bool getBool(String key) {
+    return prefs.getBool(key) ?? false;
   }
 }
