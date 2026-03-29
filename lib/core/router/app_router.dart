@@ -1,5 +1,6 @@
 import 'package:alquilo/core/router/routes.dart';
 import 'package:alquilo/features/auth/presentation/pages/get_started_page.dart';
+import 'package:alquilo/features/auth/presentation/pages/login_page.dart';
 import 'package:alquilo/features/onbarding/presentation/pages/onboarding_page.dart';
 import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
 import 'package:alquilo/injection_container.dart';
@@ -27,6 +28,10 @@ class AppRouter {
       GoRoute(
         path: Routes.getStarted,
         builder: (context, state) => GetStartedPage()
+      ),
+      GoRoute(
+        path: Routes.login,
+        builder: (context, state) => LoginPage()
       ),
     ],
   );

@@ -7,5 +7,6 @@ class AssetsManager {
   static const String onboarding2 = "$_baseImagePath/onboarding_2.jpg";
   static const String icGoogle = "$_baseIconsPath/ic_google.png";
   static const String icApple = "$_baseIconsPath/ic_apple.png";
+  static const String icFacebook = "$_baseIconsPath/ic_facebook.png";
 
 }

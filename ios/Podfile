@@ -30,6 +30,10 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
 
+  # libphonenumber_plugin expects PhoneNumberKit 3.x API (`PhoneNumberKit` type).
+  # PhoneNumberKit 4+ renamed it to `PhoneNumberUtility` and breaks the plugin Swift sources.
+  pod 'PhoneNumberKit', '~> 3.7'
+
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
   target 'RunnerTests' do
     inherit! :search_paths

@@ -17,5 +17,18 @@
   "google_signup": "Sign Up with Google",
   "apple_signup": "Sign Up with Apple",
   "have_account": "Already Have an Account?",
-  "sign_in": "Sign In"
+  "sign_in": "Sign In",
+
+  "welcome_back": "Welcome Back!",
+  "login_hint": "Enter your registered account to sign in",
+  "email": "Email",
+  "phone_number": "Phone Number",
+  "enter_email": "Enter your email address..",
+  "enter_phone_number": "Enter your phone number..",
+  "password": "Password",
+  "enter_password": "Enter your password..",
+  "forgot_password": "Forgot password?",
+  "or_login_with": "Or continue with",
+  "dont_have_account": "Don’t have an account?",
+  "sign_up": "Sign Up"
 }

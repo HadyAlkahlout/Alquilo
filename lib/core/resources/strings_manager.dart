@@ -16,4 +16,16 @@ class StringsManager {
   static const String appleSignup = "apple_signup";
   static const String haveAccount = "have_account";
   static const String signIn = "sign_in";
+  static const String welcomeBack = "welcome_back";
+  static const String loginHint = "login_hint";
+  static const String email = "email";
+  static const String phoneNumber = "phone_number";
+  static const String enterEmail = "enter_email";
+  static const String enterPhoneNumber = "enter_phone_number";
+  static const String password = "password";
+  static const String enterPassword = "enter_password";
+  static const String forgotPassword = "forgot_password";
+  static const String orLoginWith = "or_login_with";
+  static const String dontHaveAccount = "dont_have_account";
+  static const String signUp = "sign_up";
 }

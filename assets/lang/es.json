@@ -17,5 +17,18 @@
   "google_signup": "Regístrate con Google",
   "apple_signup": "Regístrate con Apple",
   "have_account": "¿Ya tienes una cuenta?",
-  "sign_in": "Inicia sesión"
+  "sign_in": "Inicia sesión",
+
+  "welcome_back": "¡Bienvenido de nuevo!",
+  "login_hint": "Ingresa tu cuenta registrada para iniciar sesión",
+  "email": "Correo electrónico",
+  "phone_number": "Número de teléfono",
+  "enter_email": "Ingresa tu dirección de correo electrónico...",
+  "enter_phone_number": "Ingresa tu número de teléfono...",
+  "password": "Contraseña",
+  "enter_password": "Ingresa tu contraseña...",
+  "forgot_password": "¿Olvidaste tu contraseña?",
+  "or_login_with": "O continúa con",
+  "dont_have_account": "¿No tienes una cuenta?",
+  "sign_up": "Regístrate"
 }

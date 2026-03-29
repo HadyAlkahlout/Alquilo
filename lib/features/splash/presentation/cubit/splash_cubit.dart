@@ -22,7 +22,7 @@ class SplashCubit extends Cubit<SplashState> {
 
     if (!seenOnboarding) {
       emit(NavigateToOnboarding());
-    } else if (token == null) {
+    } else if (token == null || token.isEmpty) {
       emit(NavigateToLogin());
     } else {
       emit(NavigateToHome());

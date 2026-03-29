@@ -25,6 +25,17 @@ class AppTheme {
         ),
       ),
     ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: ColorManager.primaryColor,
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(AppSize.s12),
+        borderSide: BorderSide(color: ColorManager.lightGrey),
+      ),
+    ),
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -47,6 +58,17 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSize.s24),
         ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        foregroundColor: ColorManager.primaryColor,
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(AppSize.s12),
+        borderSide: BorderSide(color: ColorManager.lightGrey),
       ),
     ),
   );

@@ -1,5 +1,7 @@
+import 'package:alquilo/core/router/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../core/resources/assets_manager.dart';
 import '../../../../core/resources/strings_manager.dart';
@@ -83,7 +85,7 @@ class GetStartedPage extends StatelessWidget {
                 children: [
                   Text(StringsManager.haveAccount.tr()),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () => _signIn(context),
                     child: Text(StringsManager.signIn.tr()),
                   ),
                 ],
@@ -100,4 +102,8 @@ class GetStartedPage extends StatelessWidget {
   void _googleSignup() {}
 
   void _appleSignup() {}
+
+  void _signIn(BuildContext context){
+    context.push(Routes.login);
+  }
 }
