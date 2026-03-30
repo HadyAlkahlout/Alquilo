@@ -12,6 +12,7 @@ class ColorManager {
 
   static const Color iconColor = Color(0xFF697586);
   static const Color toggleBackgroundColor = Color(0x70EEF2F6);
+  static const Color activeFiledColor = Color(0xFFF6FEF9);
 
   static const textLight = Color(0xFF4B5565);
   static const textDark = Colors.white;

@@ -39,5 +39,23 @@
   "terms_description": "بإنشاء حساب، فإنك توافق على شروطنا",
   "terms_and_conditions": "الشروط والأحكام",
   "and": "و",
-  "privacy_notice": "إشعار الخصوصية"
+  "privacy_notice": "إشعار الخصوصية",
+
+  "verify_phone": "رمز التحقق",
+  "verify_phone_description": "الرجاء إدخال الرمز الذي أرسلناه للتو إلى رقمك",
+  "resend_code_in": "أعد إرسال الرمز بعد ",
+  "resend_code": "أعد إرسال الرمز",
+  "second": "ثانية",
+  "continue": "متابعة",
+
+  "forgot_password_title": "نسيت كلمة المرور",
+  "forgot_password_description": "اختر طريقة التحقق وسنرسل لك رمز التحقق",
+
+  "new_password_title": "كلمة المرور الجديدة",
+  "new_password_description": "أنشئ كلمة مرور جديدة آمنة وسهلة التذكر",
+  "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+
+  "password_changed_title": "تم تغيير كلمة المرور!",
+  "password_changed_description": "تم تحديث كلمة مرورك بنجاح. يمكنك الآن تسجيل الدخول باستخدام كلمة مرورك الجديدة.",
+  "login_now": "سجل الدخول الآن"
 }

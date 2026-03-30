@@ -1,4 +1,5 @@
 import 'package:alquilo/core/resources/colors_manager.dart';
+import 'package:alquilo/core/router/routes.dart';
 import 'package:alquilo/core/utils/validators.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,6 +20,7 @@ class RegisterPage extends StatelessWidget {
 
   final nameController = TextEditingController();
   final emailController = TextEditingController();
+  final phoneController = TextEditingController();
   final passwordController = TextEditingController();
 
   @override
@@ -32,7 +34,7 @@ class RegisterPage extends StatelessWidget {
             child: BlocConsumer<RegisterCubit, RegisterState>(
               listener: (context, state) {
                 if (state is RegisterSuccess) {
-                  context.go('/home');
+                  context.go(Routes.otp, extra: phoneController.text);
                 } else if (state is RegisterError) {
                   ScaffoldMessenger.of(
                     context,
@@ -98,6 +100,23 @@ class RegisterPage extends StatelessWidget {
                             hint: StringsManager.enterEmail.tr(),
                             controller: emailController,
                             validator: Validators.email,
+                          ),
+
+                          const SizedBox(height: AppPaddings.p16),
+
+                          Text(
+                            StringsManager.phoneNumber.tr(),
+                            style: Theme.of(context).textTheme.bodyLarge,
+                          ),
+
+                          const SizedBox(height: AppPaddings.p8),
+
+                          // Phone number
+                          CustomTextField(
+                            hint: StringsManager.enterPhoneNumber.tr(),
+                            controller: phoneController,
+                            validator: Validators.phoneNumber,
+                            isPhone: true,
                           ),
 
                           const SizedBox(height: AppPaddings.p16),

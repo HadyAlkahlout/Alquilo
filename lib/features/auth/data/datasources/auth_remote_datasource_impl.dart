@@ -24,4 +24,20 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
     return UserModel(token: "new_user_token_456");
   }
+
+  @override
+  Future<UserModel> verifyOtp(String phone, String code) async {
+    await Future.delayed(const Duration(seconds: 2));
+
+    if (code == "1234") {
+      return UserModel(token: "otp_token_789");
+    } else {
+      throw Exception("Invalid code");
+    }
+  }
+
+  @override
+  Future<void> resendOtp(String phone) async {
+    await Future.delayed(const Duration(seconds: 1));
+  }
 }

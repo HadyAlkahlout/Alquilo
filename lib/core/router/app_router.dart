@@ -1,6 +1,7 @@
 import 'package:alquilo/core/router/routes.dart';
 import 'package:alquilo/features/auth/presentation/pages/get_started_page.dart';
 import 'package:alquilo/features/auth/presentation/pages/login_page.dart';
+import 'package:alquilo/features/auth/presentation/pages/otp_page.dart';
 import 'package:alquilo/features/auth/presentation/pages/register_page.dart';
 import 'package:alquilo/features/onbarding/presentation/pages/onboarding_page.dart';
 import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
@@ -37,6 +38,14 @@ class AppRouter {
       GoRoute(
         path: Routes.register,
         builder: (context, state) => RegisterPage()
+      ),
+      GoRoute(
+        path: Routes.otp,
+        builder: (context, state) {
+          return OtpPage(phoneNumber: '1234567876');
+          // final phoneNumber = state.extra as String;
+          // return OtpPage(phoneNumber: phoneNumber);
+        }
       ),
     ],
   );

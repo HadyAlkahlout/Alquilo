@@ -23,4 +23,17 @@ class AuthRepositoryImpl implements AuthRepository {
   }) async {
     return await remote.register(name, email, password);
   }
+
+  @override
+  Future<User> verifyOtp({
+    required String phone,
+    required String code,
+  }) async {
+    return await remote.verifyOtp(phone, code);
+  }
+
+  @override
+  Future<void> resendOtp({required String phone}) async {
+    await remote.resendOtp(phone);
+  }
 }

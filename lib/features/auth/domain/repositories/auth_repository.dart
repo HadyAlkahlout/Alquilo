@@ -10,4 +10,11 @@ abstract class AuthRepository {
     required String email,
     required String password,
   });
+  Future<User> verifyOtp({
+    required String phone,
+    required String code,
+  });
+  Future<void> resendOtp({
+    required String phone,
+  });
 }

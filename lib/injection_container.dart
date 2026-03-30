@@ -1,4 +1,6 @@
 import 'package:alquilo/features/auth/domain/usecases/register_usecase.dart';
+import 'package:alquilo/features/auth/domain/usecases/resend_otp_usecase.dart';
+import 'package:alquilo/features/auth/domain/usecases/verify_otp_usecase.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'features/auth/data/datasources/auth_remote_datasource.dart';
@@ -40,4 +42,6 @@ Future<void> init() async {
   // UseCase
   sl.registerLazySingleton(() => LoginUseCase(sl()));
   sl.registerLazySingleton(() => RegisterUseCase(sl()));
+  sl.registerLazySingleton(() => VerifyOtpUseCase(sl()));
+  sl.registerLazySingleton(() => ResendOtpUseCase(sl()));
 }

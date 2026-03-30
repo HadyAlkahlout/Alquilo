@@ -4,4 +4,8 @@ abstract class AuthRemoteDataSource {
   Future<UserModel> login(String email, String password);
 
   Future<UserModel> register(String name, String email, String password);
+
+  Future<UserModel> verifyOtp(String phone, String code);
+
+  Future<void> resendOtp(String phone);
 }

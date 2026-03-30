@@ -36,4 +36,18 @@ class StringsManager {
   static const String termsAndConditions = "terms_and_conditions";
   static const String and = "and";
   static const String privacyNotice = "privacy_notice";
+  static const String verifyPhone = "verify_phone";
+  static const String verifyPhoneDescription = "verify_phone_description";
+  static const String resendCodeIn = "resend_code_in";
+  static const String resendCode = "resend_code";
+  static const String second = "second";
+  static const String continueButton = "continue";
+  static const String forgotPasswordTitle = "forgot_password_title";
+  static const String forgotPasswordDescription = "forgot_password_description";
+  static const String newPasswordTitle = "new_password_title";
+  static const String newPasswordDescription = "new_password_description";
+  static const String confirmNewPassword = "confirm_new_password";
+  static const String passwordChangedTitle = "password_changed_title";
+  static const String passwordChangedDescription = "password_changed_description";
+  static const String loginNow = "login_now";
 }

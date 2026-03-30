@@ -39,5 +39,23 @@
   "terms_description": "By creating an account, you agree to our",
   "terms_and_conditions": "Terms and Conditions",
   "and": "and",
-  "privacy_notice": "Privacy Notice"
+  "privacy_notice": "Privacy Notice",
+
+  "verify_phone": "Verify Code",
+  "verify_phone_description": "Please enter the code we just sent to your number",
+  "resend_code_in": "Resend code in ",
+  "resend_code": "Resend code",
+  "second": "s",
+  "continue": "Continue",
+
+  "forgot_password_title": "Forgot Password",
+  "forgot_password_description": "Select verification method and we will send verification code",
+
+  "new_password_title": "New Password",
+  "new_password_description": "Create a new password that is safe and easy to remember",
+  "confirm_new_password": "Confirm New password",
+
+  "password_changed_title": "Password Changed!",
+  "password_changed_description": "Your password has been successfully updated. You can now log in with your new password.",
+  "login_now": "Login Now"
 }

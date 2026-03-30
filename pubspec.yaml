@@ -23,6 +23,7 @@ dependencies:
   shared_preferences: ^2.5.4
   google_fonts: ^8.0.2
   country_code_picker_plus: ^0.1.0+1
+  pin_code: ^1.2.0
 
 dev_dependencies:
   flutter_test:
