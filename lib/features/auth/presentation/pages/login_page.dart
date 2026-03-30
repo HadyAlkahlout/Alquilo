@@ -264,5 +264,7 @@ class LoginPage extends StatelessWidget {
 
   void _facebookLogin(BuildContext context) {}
 
-  void _signUp(BuildContext context) {}
+  void _signUp(BuildContext context) {
+    context.push(Routes.register);
+  }
 }

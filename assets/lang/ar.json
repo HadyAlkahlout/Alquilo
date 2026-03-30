@@ -30,5 +30,14 @@
   "forgot_password": "هل نسيت كلمة المرور؟",
   "or_login_with": "أو تابع باستخدام",
   "dont_have_account": "ليس لديك حساب؟",
-  "sign_up": "سجل الآن"
+  "sign_up": "سجل الآن",
+
+  "sign_up_title": "إنشاء حساب",
+  "sign_up_description": "انضم إلينا اليوم واكتشف إمكانيات لا حدود لها. الأمر سريع وسهل، بخطوة واحدة فقط!",
+  "full_name": "الاسم الكامل",
+  "enter_full_name": "أدخل اسمك..",
+  "terms_description": "بإنشاء حساب، فإنك توافق على شروطنا",
+  "terms_and_conditions": "الشروط والأحكام",
+  "and": "و",
+  "privacy_notice": "إشعار الخصوصية"
 }

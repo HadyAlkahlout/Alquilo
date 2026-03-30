@@ -30,5 +30,14 @@
   "forgot_password": "¿Olvidaste tu contraseña?",
   "or_login_with": "O continúa con",
   "dont_have_account": "¿No tienes una cuenta?",
-  "sign_up": "Regístrate"
+  "sign_up": "Regístrate",
+
+  "sign_up_title": "Crea una cuenta",
+  "sign_up_description": "Únete hoy y descubre un sinfín de posibilidades. ¡Es rápido, fácil y a solo un paso!",
+  "full_name": "Nombre completo",
+  "enter_full_name": "Ingresa tu nombre...",
+  "terms_description": "Al crear una cuenta, aceptas nuestros",
+  "terms_and_conditions": "Términos y Condiciones",
+  "and": "y",
+  "privacy_notice": "Aviso de privacidad"
 }

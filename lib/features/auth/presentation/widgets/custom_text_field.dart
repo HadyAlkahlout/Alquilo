@@ -11,6 +11,8 @@ class CustomTextField extends StatelessWidget {
   final VoidCallback? toggleVisibility;
   final TextEditingController controller;
 
+  final String? Function(String?)? validator;
+
   const CustomTextField({
     super.key,
     required this.hint,
@@ -19,13 +21,15 @@ class CustomTextField extends StatelessWidget {
     this.isPassword = false,
     this.isHidden = false,
     this.toggleVisibility,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       controller: controller,
       obscureText: isPassword ? isHidden : false,
+      validator: validator,
       decoration: InputDecoration(
         hintText: hint,
         suffixIcon: isPassword

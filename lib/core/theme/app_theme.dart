@@ -6,6 +6,10 @@ class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     primaryColor: ColorManager.primaryColor,
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: ColorManager.primaryColor,
+      brightness: Brightness.light,
+    ),
     scaffoldBackgroundColor: ColorManager.backgroundLight,
     textTheme: TextTheme(),
     outlinedButtonTheme: OutlinedButtonThemeData(
@@ -41,6 +45,10 @@ class AppTheme {
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
     primaryColor: ColorManager.primaryColor,
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: ColorManager.primaryColor,
+      brightness: Brightness.dark,
+    ),
     scaffoldBackgroundColor: ColorManager.backgroundDark,
     textTheme: TextTheme(),
     outlinedButtonTheme: OutlinedButtonThemeData(

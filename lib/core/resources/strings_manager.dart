@@ -28,4 +28,12 @@ class StringsManager {
   static const String orLoginWith = "or_login_with";
   static const String dontHaveAccount = "dont_have_account";
   static const String signUp = "sign_up";
+  static const String signUpTitle = "sign_up_title";
+  static const String signUpDescription = "sign_up_description";
+  static const String fullName = "full_name";
+  static const String enterFullName = "enter_full_name";
+  static const String termsDescription = "terms_description";
+  static const String termsAndConditions = "terms_and_conditions";
+  static const String and = "and";
+  static const String privacyNotice = "privacy_notice";
 }

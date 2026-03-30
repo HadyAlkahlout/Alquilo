@@ -14,4 +14,13 @@ class AuthRepositoryImpl implements AuthRepository {
   }) async {
     return await remote.login(email, password);
   }
+
+  @override
+  Future<User> register({
+    required String name,
+    required String email,
+    required String password,
+  }) async {
+    return await remote.register(name, email, password);
+  }
 }

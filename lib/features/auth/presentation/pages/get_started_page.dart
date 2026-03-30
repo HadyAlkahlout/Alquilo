@@ -49,7 +49,7 @@ class GetStartedPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => _emailSignup(),
+                  onPressed: () => _emailSignup(context),
                   child: Text(StringsManager.emailSignup.tr()),
                 ),
               ),
@@ -97,7 +97,9 @@ class GetStartedPage extends StatelessWidget {
     );
   }
 
-  void _emailSignup() {}
+  void _emailSignup(BuildContext context) {
+    context.push(Routes.register);
+  }
 
   void _googleSignup() {}
 
