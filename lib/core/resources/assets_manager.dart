@@ -8,5 +8,7 @@ class AssetsManager {
   static const String icGoogle = "$_baseIconsPath/ic_google.png";
   static const String icApple = "$_baseIconsPath/ic_apple.png";
   static const String icFacebook = "$_baseIconsPath/ic_facebook.png";
+  static const String icMail = "$_baseIconsPath/ic_mail.png";
+  static const String icPhone = "$_baseIconsPath/ic_phone.png";
 
 }

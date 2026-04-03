@@ -9,8 +9,8 @@ import '../../../../core/resources/strings_manager.dart';
 import '../../../../core/resources/values_manager.dart';
 import '../../../../core/router/routes.dart';
 
-import '../cubit/login_cubit.dart';
-import '../cubit/login_state.dart';
+import '../cubit/login/login_cubit.dart';
+import '../cubit/login/login_state.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/social_icon_button.dart';
 
@@ -25,6 +25,7 @@ class LoginPage extends StatelessWidget {
     return BlocProvider(
       create: (_) => LoginCubit(),
       child: Scaffold(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.all(AppPaddings.p20),
@@ -184,11 +185,13 @@ class LoginPage extends StatelessWidget {
                             : () => _login(context, cubit),
                         child: state is LoginLoading
                             ? Padding(
-                              padding: const EdgeInsets.symmetric(vertical: AppPaddings.p4),
-                              child: const CircularProgressIndicator(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: AppPaddings.p4,
+                                ),
+                                child: const CircularProgressIndicator(
                                   color: ColorManager.primaryColor,
                                 ),
-                            )
+                              )
                             : Text(StringsManager.signIn.tr()),
                       ),
                     ),
@@ -256,7 +259,9 @@ class LoginPage extends StatelessWidget {
     cubit.login(email: emailController.text, password: passwordController.text);
   }
 
-  void _forgotPassword(BuildContext context) {}
+  void _forgotPassword(BuildContext context) {
+    context.push(Routes.forgetPassword);
+  }
 
   void _googleLogin(BuildContext context) {}
 

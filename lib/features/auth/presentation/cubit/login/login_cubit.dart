@@ -1,5 +1,3 @@
-import 'package:alquilo/core/constants/storage_keys.dart';
-import 'package:alquilo/core/storage/local_storage.dart';
 import 'package:alquilo/features/auth/domain/usecases/login_usecase.dart';
 import 'package:alquilo/injection_container.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,7 +32,7 @@ class LoginCubit extends Cubit<LoginState> {
       final user = await loginUseCase(email, password);
 
       // 🔥 حفظ التوكن
-      sl<LocalStorage>().setString(StorageKeys.token, user.token);
+      // sl<LocalStorage>().setString(StorageKeys.token, user.token);
 
       emit(LoginSuccess());
     } catch (e) {

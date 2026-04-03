@@ -1,6 +1,7 @@
 import 'package:alquilo/core/resources/colors_manager.dart';
 import 'package:alquilo/core/router/routes.dart';
 import 'package:alquilo/core/utils/validators.dart';
+import 'package:alquilo/features/auth/presentation/model/request_otp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -9,8 +10,8 @@ import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/resources/strings_manager.dart';
 import '../../../../core/resources/values_manager.dart';
 
-import '../cubit/register_cubit.dart';
-import '../cubit/register_state.dart';
+import '../cubit/register/register_cubit.dart';
+import '../cubit/register/register_state.dart';
 import '../widgets/custom_text_field.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -28,13 +29,15 @@ class RegisterPage extends StatelessWidget {
     return BlocProvider(
       create: (_) => RegisterCubit(),
       child: Scaffold(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.all(AppPaddings.p20),
             child: BlocConsumer<RegisterCubit, RegisterState>(
               listener: (context, state) {
                 if (state is RegisterSuccess) {
-                  context.go(Routes.otp, extra: phoneController.text);
+                  RequestOtp requestOtp = RequestOtp(phoneController.text, true);
+                  context.go(Routes.otp, extra: requestOtp);
                 } else if (state is RegisterError) {
                   ScaffoldMessenger.of(
                     context,
@@ -195,7 +198,8 @@ class RegisterPage extends StatelessWidget {
                           SizedBox(
                             width: double.infinity,
                             child: ElevatedButton(
-                              onPressed: state is RegisterLoading || !cubit.isChecked
+                              onPressed:
+                                  state is RegisterLoading || !cubit.isChecked
                                   ? null
                                   : () {
                                       if (_formKey.currentState!.validate()) {

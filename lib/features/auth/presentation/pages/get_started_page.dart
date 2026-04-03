@@ -17,6 +17,7 @@ class GetStartedPage extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
 
     return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(AppPaddings.p20),
@@ -38,9 +39,7 @@ class GetStartedPage extends StatelessWidget {
               Text(
                 StringsManager.getStartedDescription.tr(),
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: colors.onBackground.withOpacity(0.6),
-                ),
+                style: TextStyle(color: colors.onBackground.withOpacity(0.6)),
               ),
 
               SizedBox(height: AppSize.s32),
@@ -105,7 +104,7 @@ class GetStartedPage extends StatelessWidget {
 
   void _appleSignup() {}
 
-  void _signIn(BuildContext context){
+  void _signIn(BuildContext context) {
     context.push(Routes.login);
   }
 }

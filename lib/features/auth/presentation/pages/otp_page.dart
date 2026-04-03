@@ -1,4 +1,6 @@
 import 'package:alquilo/core/resources/colors_manager.dart';
+import 'package:alquilo/core/router/routes.dart';
+import 'package:alquilo/features/auth/presentation/model/request_otp.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,32 +10,37 @@ import 'package:pin_code/pin_code.dart';
 import '../../../../core/resources/values_manager.dart';
 import '../../../../core/resources/strings_manager.dart';
 
-import '../cubit/otp_cubit.dart';
-import '../cubit/otp_state.dart';
+import '../cubit/otp/otp_cubit.dart';
+import '../cubit/otp/otp_state.dart';
 
 class OtpPage extends StatelessWidget {
-  OtpPage({super.key, required this.phoneNumber});
+  OtpPage({super.key, required this.requestOtp});
 
   String code = '';
 
-  final String phoneNumber;
+  final RequestOtp requestOtp;
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => OtpCubit()..startTimer(),
       child: Scaffold(
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.all(AppPaddings.p20),
             child: BlocConsumer<OtpCubit, OtpState>(
               listener: (context, state) {
                 if (state is OtpSuccess) {
-                  context.go('/home');
+                  if (requestOtp.isForgetPassword) {
+                    context.go(Routes.resetPassword);
+                  } else {
+                    context.go(Routes.home);
+                  }
                 } else if (state is OtpError) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text(state.message)),
-                  );
+                  ScaffoldMessenger.of(
+                    context,
+                  ).showSnackBar(SnackBar(content: Text(state.message)));
                 }
               },
               builder: (context, state) {
@@ -55,8 +62,7 @@ class OtpPage extends StatelessWidget {
 
                     Text(
                       StringsManager.verifyPhone.tr(),
-                      style:
-                      Theme.of(context).textTheme.headlineMedium,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
 
                     const SizedBox(height: AppPaddings.p8),
@@ -66,10 +72,7 @@ class OtpPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
 
-                    Text(
-                      "($phoneNumber)",
-                      textAlign: TextAlign.center,
-                    ),
+                    Text("(${requestOtp.value})", textAlign: TextAlign.center),
 
                     const SizedBox(height: AppPaddings.p24),
 
@@ -91,9 +94,7 @@ class OtpPage extends StatelessWidget {
                             inactiveColor: ColorManager.lightGrey,
                             selectedColor: ColorManager.primaryColor,
                           ),
-                          textStyle: TextStyle(
-                            fontSize: AppSize.s24,
-                          ),
+                          textStyle: TextStyle(fontSize: AppSize.s24),
                           onChanged: (value) {
                             print(value);
                           },
@@ -109,11 +110,13 @@ class OtpPage extends StatelessWidget {
 
                     // ⏱ Timer
                     if (cubit.seconds > 0)
-                      Text("${StringsManager.resendCodeIn.tr()} ${cubit.seconds}${StringsManager.second.tr()}")
+                      Text(
+                        "${StringsManager.resendCodeIn.tr()} ${cubit.seconds}${StringsManager.second.tr()}",
+                      )
                     else
                       TextButton(
                         onPressed: () => _resendCode(cubit),
-                        child: Text(StringsManager.resendCode.tr(),),
+                        child: Text(StringsManager.resendCode.tr()),
                       ),
 
                     const SizedBox(height: AppPaddings.p24),
@@ -125,13 +128,15 @@ class OtpPage extends StatelessWidget {
                         onPressed: state is OtpLoading
                             ? null
                             : () {
-                          _verifyCode(cubit, code);
-                        },
+                                _verifyCode(cubit, code);
+                              },
                         child: state is OtpLoading
                             ? Padding(
-                              padding: const EdgeInsets.symmetric(vertical: AppPaddings.p4),
-                              child: const CircularProgressIndicator(),
-                            )
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: AppPaddings.p4,
+                                ),
+                                child: const CircularProgressIndicator(),
+                              )
                             : Text(StringsManager.continueButton.tr()),
                       ),
                     ),
@@ -145,11 +150,11 @@ class OtpPage extends StatelessWidget {
     );
   }
 
-  void _verifyCode(OtpCubit cubit, String code){
-    cubit.verifyCode(phone: phoneNumber, code: code);
+  void _verifyCode(OtpCubit cubit, String code) {
+    cubit.verifyCode(phone: requestOtp.value, code: code);
   }
 
-  void _resendCode(OtpCubit cubit){
-    cubit.resendCode(phoneNumber);
+  void _resendCode(OtpCubit cubit) {
+    cubit.resendCode(requestOtp.value);
   }
 }
