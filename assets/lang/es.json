@@ -54,6 +54,7 @@
   "new_password_title": "Nueva contraseña",
   "new_password_description": "Crea una nueva contraseña que sea segura y recordable",
   "confirm_new_password": "Confirmar nueva contraseña",
+  "create_new_password": "Crear nueva contraseña",
 
   "password_changed_title": "Contraseña cambiada!",
   "password_changed_description": "Tu contraseña ha sido exitosamente actualizada. Ahora puedes iniciar sesión con tu nueva contraseña.",

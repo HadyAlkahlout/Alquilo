@@ -9,6 +9,7 @@ import 'package:alquilo/features/auth/presentation/pages/register_page.dart';
 import 'package:alquilo/features/onbarding/presentation/pages/onboarding_page.dart';
 import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
 import 'package:alquilo/injection_container.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
@@ -38,7 +39,10 @@ class AppRouter {
       ),
       GoRoute(
         path: Routes.login,
-        builder: (context, state) => LoginPage()
+        builder: (context, state) {
+          bool canBack = state.extra as bool;
+          return LoginPage(canBack: canBack);
+        }
       ),
       GoRoute(
         path: Routes.register,

@@ -54,6 +54,7 @@
   "new_password_title": "كلمة المرور الجديدة",
   "new_password_description": "أنشئ كلمة مرور جديدة آمنة وسهلة التذكر",
   "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+  "create_new_password": "انشأ كلمة سر جديدة",
 
   "password_changed_title": "تم تغيير كلمة المرور!",
   "password_changed_description": "تم تحديث كلمة مرورك بنجاح. يمكنك الآن تسجيل الدخول باستخدام كلمة مرورك الجديدة.",

@@ -8,4 +8,8 @@ abstract class AuthRemoteDataSource {
   Future<UserModel> verifyOtp(String phone, String code);
 
   Future<void> resendOtp(String phone);
+
+  Future<void> sendResetCode(String phoneMail);
+
+  Future<void> resetPassword(String password);
 }

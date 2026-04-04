@@ -10,5 +10,6 @@ class AssetsManager {
   static const String icFacebook = "$_baseIconsPath/ic_facebook.png";
   static const String icMail = "$_baseIconsPath/ic_mail.png";
   static const String icPhone = "$_baseIconsPath/ic_phone.png";
+  static const String icSuccess = "$_baseIconsPath/ic_success.png";
 
 }

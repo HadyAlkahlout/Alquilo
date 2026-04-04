@@ -15,7 +15,9 @@ import '../widgets/custom_text_field.dart';
 import '../widgets/social_icon_button.dart';
 
 class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+  LoginPage({super.key, this.canBack = true});
+
+  bool canBack;
 
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
@@ -46,7 +48,7 @@ class LoginPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // 🔙 Back
-                    IconButton(
+                     if (canBack) IconButton(
                       onPressed: () => context.pop(),
                       icon: const Icon(Icons.arrow_back),
                     ),

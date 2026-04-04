@@ -105,6 +105,6 @@ class GetStartedPage extends StatelessWidget {
   void _appleSignup() {}
 
   void _signIn(BuildContext context) {
-    context.push(Routes.login);
+    context.push(Routes.login, extra: true);
   }
 }

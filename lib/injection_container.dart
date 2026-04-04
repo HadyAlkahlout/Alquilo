@@ -1,5 +1,7 @@
 import 'package:alquilo/features/auth/domain/usecases/register_usecase.dart';
 import 'package:alquilo/features/auth/domain/usecases/resend_otp_usecase.dart';
+import 'package:alquilo/features/auth/domain/usecases/reset_password_usecase.dart';
+import 'package:alquilo/features/auth/domain/usecases/send_reset_code_usecase.dart';
 import 'package:alquilo/features/auth/domain/usecases/verify_otp_usecase.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -44,4 +46,6 @@ Future<void> init() async {
   sl.registerLazySingleton(() => RegisterUseCase(sl()));
   sl.registerLazySingleton(() => VerifyOtpUseCase(sl()));
   sl.registerLazySingleton(() => ResendOtpUseCase(sl()));
+  sl.registerLazySingleton(() => SendResetCodeUseCase(sl()));
+  sl.registerLazySingleton(() => ResetPasswordUseCase(sl()));
 }

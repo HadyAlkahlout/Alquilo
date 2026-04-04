@@ -33,14 +33,17 @@ class OtpCubit extends Cubit<OtpState> {
   Future<void> verifyCode({
     required String phone,
     required String code,
+    bool isResend = false,
   }) async {
     emit(OtpLoading());
 
     try {
       final user = await verifyOtpUseCase(phone, code);
 
-      // 🔥 حفظ التوكن
-      await sl<LocalStorage>().setString("token", user.token);
+      if (!isResend) {
+        // 🔥 حفظ التوكن
+        await sl<LocalStorage>().setString("token", user.token);
+      }
 
       emit(OtpSuccess());
     } catch (e) {

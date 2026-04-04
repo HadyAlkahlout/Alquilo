@@ -40,4 +40,14 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   Future<void> resendOtp(String phone) async {
     await Future.delayed(const Duration(seconds: 1));
   }
+
+  @override
+  Future<void> sendResetCode(String phoneMail) async {
+    await Future.delayed(const Duration(seconds: 2));
+  }
+
+  @override
+  Future<void> resetPassword(String password) async {
+    await Future.delayed(const Duration(seconds: 3));
+  }
 }

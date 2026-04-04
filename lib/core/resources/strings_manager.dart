@@ -47,6 +47,7 @@ class StringsManager {
   static const String newPasswordTitle = "new_password_title";
   static const String newPasswordDescription = "new_password_description";
   static const String confirmNewPassword = "confirm_new_password";
+  static const String createNewPassword = "create_new_password";
   static const String passwordChangedTitle = "password_changed_title";
   static const String passwordChangedDescription = "password_changed_description";
   static const String loginNow = "login_now";

@@ -36,4 +36,18 @@ class AuthRepositoryImpl implements AuthRepository {
   Future<void> resendOtp({required String phone}) async {
     await remote.resendOtp(phone);
   }
+
+  @override
+  Future<void> sendResetCode({
+    required String phoneMail,
+  }) async {
+    await remote.sendResetCode(phoneMail);
+  }
+
+  @override
+  Future<void> resetPassword({
+    required String password,
+  }) async {
+    await remote.resetPassword(password);
+  }
 }

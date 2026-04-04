@@ -54,6 +54,7 @@
   "new_password_title": "New Password",
   "new_password_description": "Create a new password that is safe and easy to remember",
   "confirm_new_password": "Confirm New password",
+  "create_new_password": "Create New Password",
 
   "password_changed_title": "Password Changed!",
   "password_changed_description": "Your password has been successfully updated. You can now log in with your new password.",

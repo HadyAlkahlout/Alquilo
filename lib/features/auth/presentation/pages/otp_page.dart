@@ -151,7 +151,11 @@ class OtpPage extends StatelessWidget {
   }
 
   void _verifyCode(OtpCubit cubit, String code) {
-    cubit.verifyCode(phone: requestOtp.value, code: code);
+    cubit.verifyCode(
+      phone: requestOtp.value,
+      code: code,
+      isResend: requestOtp.isForgetPassword,
+    );
   }
 
   void _resendCode(OtpCubit cubit) {

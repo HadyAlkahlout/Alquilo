@@ -17,4 +17,10 @@ abstract class AuthRepository {
   Future<void> resendOtp({
     required String phone,
   });
+  Future<void> sendResetCode({
+    required String phoneMail,
+  });
+  Future<void> resetPassword({
+    required String password,
+  });
 }
