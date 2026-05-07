@@ -12,4 +12,13 @@ class AssetsManager {
   static const String icPhone = "$_baseIconsPath/ic_phone.png";
   static const String icSuccess = "$_baseIconsPath/ic_success.png";
 
+  static const String icHome = "$_baseIconsPath/ic_home.svg";
+  static const String icHomeActive = "$_baseIconsPath/ic_home_filed.svg";
+  static const String icSearch = "$_baseIconsPath/ic_search.svg";
+  static const String icSearchActive = "$_baseIconsPath/ic_search_filed.svg";
+  static const String icMessage = "$_baseIconsPath/ic_message.svg";
+  static const String icMessageActive = "$_baseIconsPath/ic_message_filed.svg";
+  static const String icProfile = "$_baseIconsPath/ic_profile.svg";
+  static const String icProfileActive = "$_baseIconsPath/ic_profile_filed.svg";
+
 }

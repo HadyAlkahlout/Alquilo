@@ -58,5 +58,34 @@
 
   "password_changed_title": "Contraseña cambiada!",
   "password_changed_description": "Tu contraseña ha sido exitosamente actualizada. Ahora puedes iniciar sesión con tu nueva contraseña.",
-  "login_now": "Iniciar sesión ahora"
+  "login_now": "Iniciar sesión ahora",
+
+  "what_do_you_want": "¿Qué quieres?",
+  "pick_up_location": "Lugar de recogida",
+  "pick_up_date": "Fecha de recogida",
+  "time": "Hora",
+  "drop_off_location": "Lugar de entrega",
+  "drop_off_date": "Fecha de entrega",
+  "search": "Buscar",
+  "most_popular": "Coche más popular",
+  "see_all": "Ver todo",
+  "day": "Día",
+  "home": "Inicio",
+  "messages": "Mensajes",
+  "profile": "Perfil",
+
+  "detail": "Detalle",
+  "luxury_car": "Coche de lujo",
+  "review": "Reseña",
+  "seats": "Asientos",
+  "auto": "Auto",
+  "view_owner_profile": "Ver perfil del propietario",
+  "overview": "Reseña",
+  "pre_booking": "Reserva anticipada",
+  "book_now": "Reservar Ahora",
+  "gallery": "Galería",
+  "details": "Detalles",
+  "fresh_condition": "Estado fresco",
+  "reviews": "Reseñas",
+  "ratings": "calificaciones"
 }

@@ -58,5 +58,34 @@
 
   "password_changed_title": "Password Changed!",
   "password_changed_description": "Your password has been successfully updated. You can now log in with your new password.",
-  "login_now": "Login Now"
+  "login_now": "Login Now",
+
+  "what_do_you_want": "What do you want to",
+  "pick_up_location": "Pick Up Location",
+  "pick_up_date": "Pick Up  date",
+  "time": "Time",
+  "drop_off_location": "Dropping off  Location",
+  "drop_off_date": "Dropping off  date",
+  "search": "Search",
+  "most_popular": "Most Popular Car",
+  "see_all": "See all",
+  "day": "day",
+  "home": "Home",
+  "messages": "Messages",
+  "profile": "Profile",
+
+  "detail": "Detail",
+  "luxury_car": "Luxury Car",
+  "review": "review",
+  "seats": "Seats",
+  "auto": "Auto",
+  "view_owner_profile": "View Owner Profile",
+  "overview": "Overview",
+  "pre_booking": "Pre-Booking",
+  "book_now": "Book Now",
+  "gallery": "Gallery",
+  "details": "Details",
+  "fresh_condition": "Fresh Condition",
+  "reviews": "Reviews",
+  "ratings": "ratings"
 }

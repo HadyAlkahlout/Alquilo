@@ -9,5 +9,9 @@ class Routes {
   static const forgetPassword = '/forgetPassword';
   static const resetPassword = '/resetPassword';
 
+  static const main = '/main';
   static const home = '/home';
+  static const search = '/search';
+  static const messages = '/messages';
+  static const profile = '/profile';
 }

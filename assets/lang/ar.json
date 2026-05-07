@@ -58,5 +58,34 @@
 
   "password_changed_title": "تم تغيير كلمة المرور!",
   "password_changed_description": "تم تحديث كلمة مرورك بنجاح. يمكنك الآن تسجيل الدخول باستخدام كلمة مرورك الجديدة.",
-  "login_now": "سجل الدخول الآن"
+  "login_now": "سجل الدخول الآن",
+
+  "what_do_you_want": "ماذا تريد؟",
+  "pick_up_location": "موقع الاستلام",
+  "pick_up_date": "تاريخ الاستلام",
+  "time": "الوقت",
+  "drop_off_location": "موقع التسليم",
+  "drop_off_date": "تاريخ التسليم",
+  "search": "بحث",
+  "most_popular": "السيارات الأكثر شعبية",
+  "see_all": "عرض الكل",
+  "day": "اليوم",
+  "home": "الرئيسية",
+  "messages": "الرسائل",
+  "profile": "الملف الشخصي",
+
+  "detail": "التفاصيل",
+  "luxury_car": "سيارة فاخرة",
+  "review": "مراجعة",
+  "seats": "مقاعد",
+  "auto": "تلقائي",
+  "view_owner_profile": "عرض ملف المالك الشخصي",
+  "overview": "نظرة عامة",
+  "pre_booking": "الحجز المسبق",
+  "book_now": "احجز الآن",
+  "gallery": "معرض الصور",
+  "details": "التفاصيل",
+  "fresh_condition": "حالة جديدة",
+  "reviews": "التقييمات",
+  "ratings": "التصنيفات"
 }

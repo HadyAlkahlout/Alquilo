@@ -6,7 +6,12 @@ import 'package:alquilo/features/auth/presentation/pages/login_page.dart';
 import 'package:alquilo/features/auth/presentation/pages/new_password_page.dart';
 import 'package:alquilo/features/auth/presentation/pages/otp_page.dart';
 import 'package:alquilo/features/auth/presentation/pages/register_page.dart';
+import 'package:alquilo/features/home/presentation/pages/home_page.dart';
+import 'package:alquilo/features/main/presentation/pages/main_page.dart';
+import 'package:alquilo/features/messages/presentation/pages/messages_page.dart';
 import 'package:alquilo/features/onbarding/presentation/pages/onboarding_page.dart';
+import 'package:alquilo/features/profile/presentation/pages/profile_page.dart';
+import 'package:alquilo/features/search/presentation/pages/search_page.dart';
 import 'package:alquilo/features/splash/presentation/pages/splash_page.dart';
 import 'package:alquilo/injection_container.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -67,7 +72,30 @@ class AppRouter {
           return NewPasswordPage();
         }
       ),
-      // home route
+      // Main route
+      ShellRoute(
+        builder: (context, state, child) {
+          return MainPage(child: child);
+        },
+        routes: [
+          GoRoute(
+            path: Routes.home,
+            builder: (context, state) => HomePage(),
+          ),
+          GoRoute(
+            path: Routes.search,
+            builder: (context, state) => SearchPage(),
+          ),
+          GoRoute(
+            path: Routes.messages,
+            builder: (context, state) => MessagesPage(),
+          ),
+          GoRoute(
+            path: Routes.profile,
+            builder: (context, state) => ProfilePage(),
+          ),
+        ],
+      )
     ],
   );
 }
