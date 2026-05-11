@@ -87,5 +87,17 @@
   "details": "Detalles",
   "fresh_condition": "Estado fresco",
   "reviews": "Reseñas",
-  "ratings": "calificaciones"
+  "ratings": "calificaciones",
+
+  "general": "General",
+  "edit_profile": "Editar Perfil",
+  "change_password": "Cambiar contraseña",
+  "notifications": "Notificaciones",
+  "security": "Seguridad",
+  "language": "Idioma",
+  "theme": "Tema",
+  "preferencess": "Preferencias",
+  "legal_policies": "Políticas legales",
+  "help_support": "Ayuda y soporte",
+  "logout": "Cerrar sesión"
 }

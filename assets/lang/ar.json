@@ -87,5 +87,17 @@
   "details": "التفاصيل",
   "fresh_condition": "حالة جديدة",
   "reviews": "التقييمات",
-  "ratings": "التصنيفات"
+  "ratings": "التصنيفات",
+
+  "general": "عام",
+  "edit_profile": "تعديل الملف الشخصي",
+  "change_password": "تغيير كلمة المرور",
+  "notifications": "الإشعارات",
+  "security": "الأمان",
+  "language": "اللغة",
+  "theme": "السمة",
+  "preferencess": "التفضيلات",
+  "legal_policies": "السياسات والقانونية",
+  "help_support": "المساعدة والدعم",
+  "logout": "تسجيل الخروج"
 }

@@ -11,7 +11,6 @@ class AssetsManager {
   static const String icMail = "$_baseIconsPath/ic_mail.png";
   static const String icPhone = "$_baseIconsPath/ic_phone.png";
   static const String icSuccess = "$_baseIconsPath/ic_success.png";
-
   static const String icHome = "$_baseIconsPath/ic_home.svg";
   static const String icHomeActive = "$_baseIconsPath/ic_home_filed.svg";
   static const String icSearch = "$_baseIconsPath/ic_search.svg";
@@ -20,5 +19,13 @@ class AssetsManager {
   static const String icMessageActive = "$_baseIconsPath/ic_message_filed.svg";
   static const String icProfile = "$_baseIconsPath/ic_profile.svg";
   static const String icProfileActive = "$_baseIconsPath/ic_profile_filed.svg";
+
+  static const String icUser = "$_baseIconsPath/ic_user.svg";
+  static const String icChangePass = "$_baseIconsPath/ic_change_pass.svg";
+  static const String icNotification = "$_baseIconsPath/ic_notification.svg";
+  static const String icSecurity = "$_baseIconsPath/ic_security.svg";
+  static const String icLanguage = "$_baseIconsPath/ic_language.svg";
+  static const String icLegal = "$_baseIconsPath/ic_legal.svg";
+  static const String icHelp = "$_baseIconsPath/ic_help.svg";
 
 }

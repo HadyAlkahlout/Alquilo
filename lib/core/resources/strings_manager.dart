@@ -78,4 +78,16 @@ class StringsManager {
   static const String freshCondition = "fresh_condition";
   static const String reviews = "reviews";
   static const String ratings = "ratings";
+
+  static const String general = "general";
+  static const String editProfile = "edit_profile";
+  static const String changePassword = "change_password";
+  static const String notifications = "notifications";
+  static const String security = "security";
+  static const String language = "language";
+  static const String theme = "theme";
+  static const String preferencess = "preferencess";
+  static const String legalPolicies = "legal_policies";
+  static const String helpSupport = "help_support";
+  static const String logout = "logout";
 }
